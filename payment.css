@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url('images/clip9.png') ;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    overflow: hidden;
+    background-color: rgba(4, 21, 41, 0.796);
+    border-radius:30px;
+
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    transform: skewX(-15deg);
+}
+
+.container h2 {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container .donate {
+    position: relative;
+    width: 100%;
+}
+
+.container .donate .donate-box{
+    position: relative;
+    width: 100%;
+    padding: 0 10px ;
+    margin: 30px 0 20px;
+}
+
+.container .donate .donate-box .donate-box-content{
+    position: relative;
+    width: 100%;
+    color: #ffffff;
+
+}
+
+.container .donate .donate-box .btn
+{
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    outline: none;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container{
+        padding: 20px;
+
+    }
+
+    .container h2 {
+        font-size: 25px;
+    }
+}

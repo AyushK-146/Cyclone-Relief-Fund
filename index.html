@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyclone Relief Funds</title>
+  <link rel="shortcut icon" type="image" href="images/logo.png"/>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="content">
+
+
+      <div class="logo">
+        <img src="images/logo.png">
+        <a href="#">Cyclone Relief Funds</a>
+      </div>
+
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#section2">About</a></li>
+        <li><a href="http://rebuild.odisha.gov.in/">Learn More</a></li>
+        <li><a href="#socials">Contact</a></li>
+      </ul>
+
+
+      <div class="icon menu-btn">
+
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="banner">
+
+     <div class="contact">
+      <button class="bn54" onclick="window.location.href = 'payment.html'" span class="bn54span">DONATE</button>
+      <button class="bn54" onclick="window.location.href = 'https://www.youtube.com/watch?v=YVTL0Cd1lWw';" span class="bn54span">WATCH NOW</button>
+
+
+    </div>
+  </div>
+
+
+
+  <section id="section2" class="section2">
+    <div class="heading">
+      <h1>ABOUT CYCLONE RELIEF</h1>
+    </div>
+
+    <div class="content">
+      <div class="content1">
+        <p>
+          Due to the Geographical structure of the Indian peninsula, the east coast facing the
+          Bay of Bengal is prone to cyclones. Cyclones are natural calamity which can leave a trail
+          of damage. Roads and Railways get blocked, roofs of houses are blown over, trees collapse
+          and lives of those living near coasts get affected. Recently severe cyclonic storms have
+          ravaged the coasts of Odisha and West Bengal. Many fishermen have lost their livelihood,
+          their homes and boats are destroyed. Sea water has damaged farmland and gale and thunder
+          have created havoc.
+          <br><br></p>
+
+        <div class="video">
+
+          <iframe width="550" height="350" src="https://www.youtube.com/embed/YVTL0Cd1lWw" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        </div>
+
+
+        <p>Your donation can help the community come back to their normal lives. It can repair all
+          the damage done and give the ones who suffered an opportunity to excel.
+          <br><br>
+          A contribution made in kind can help the affected rebuild homes and schools. This can in turn increase
+          literacy. Your little contribution can bring smile to millions, grant them good health and sanitation
+          post cyclone and make their livelihood sustain. This is our time to contribute as much as possible and
+          be a reason for their well being.
+          <br><br>
+
+          PLEASE DO DONATE!!
+        </p>
+      </div>
+
+
+
+      <div id="donate">
+        <div class="donate_lines">
+
+
+          <div class="buttons">
+            <button class="bn541" onclick="window.location.href = 'payment.html';" span class="bn541span">DONATE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+  <div id="socials" class="bottom-container">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <section class="trial-block shadow3" id="ContactUs">
+
+
+
+      <div class="social-overlap process-scetion mt100">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfD73m7JxCK03V3iby6-8yf1FguA1n716kyQE1_N5qev6NQuA/viewform?embedded=true" width="640" height="1466" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="social-bar">
+              <div class="social-icons mb-3 iconpad text-center">
+
+
+                <a href="https://www.facebook.com/Victor.nikku" target="_blank" class="slider-nav-item"><i
+                    class="fab fa-facebook"></i></a>
+
+                <a href="https://twitter.com/tintin_ayush" target="_blank" class="slider-nav-item"><i
+                    class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/ayush-kumar-a98468207/" target="_blank" class="slider-nav-item"><i
+                    class="fab fa-linkedin"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=919635529416" target="_blank" class="slider-nav-item"><i
+                    class="fab fa-whatsapp"></i></a>
+                <a href="mailto: ayush.nikku001@gmail.com" target="_blank" class="slider-nav-item"><i
+                    class="fa fa-envelope"></i></a>
+                <a href="https://www.instagram.com/_nick_ak_/" target="_blank" class="slider-nav-item"><i
+                    class="fab fa-instagram"></i></a>
+                <a href="tel: 91 9635529416" class="slider-nav-item"><i class="fa fa-phone"></i></a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = () => {
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = () => {
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = () => {
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+
+</html>
